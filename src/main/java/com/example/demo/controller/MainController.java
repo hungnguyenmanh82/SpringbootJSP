@@ -35,15 +35,15 @@ public class MainController {
  
         model.addAttribute("message", message);
  
-        return "index";  // trả về templates/index.html
+        return "index";  // trả về templates/index.jsp
     }
  
     @RequestMapping(value = { "/personList" }, method = RequestMethod.GET)
-    public String personList(Model model) {
+    public String personList(Model model) { 
  
         model.addAttribute("persons", persons);
  
-        return "personList"; // trả về templates/personList.html
+        return "personList"; // trả về templates/personList.jsp
     }
  
     @RequestMapping(value = { "/addPerson" }, method = RequestMethod.GET)
@@ -52,7 +52,7 @@ public class MainController {
         PersonForm personForm = new PersonForm();
         model.addAttribute("personForm", personForm);
  
-        return "addPerson"; // trả về templates/addPerson.html
+        return "addPerson"; // trả về templates/addPerson.jsp
     }
  
     @RequestMapping(value = { "/addPerson" }, method = RequestMethod.POST)
