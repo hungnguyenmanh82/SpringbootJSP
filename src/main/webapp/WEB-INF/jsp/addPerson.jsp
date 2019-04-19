@@ -7,12 +7,8 @@
    </head>
    <body>
       <h1>Create a Person:</h1>
-       
-      <!--  
-         In Thymeleaf the equivalent of
-         JSP's ${pageContext.request.contextPath}/edit.html
-         would be @{/edit.html}         
-         -->
+      
+      <!-- https://www.javatpoint.com/jstl-core-import-tag -->
           
       <form action="/addPerson"
          method="POST">
